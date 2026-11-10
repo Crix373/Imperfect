@@ -1,0 +1,101 @@
+/* Header with channel name, search bar, and other icons */
+
+/* Minified search bar */
+:root {
+    --transitionspeed: 0.25s;
+}
+
+.searchBar_i16Ad0 {
+    border: none !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
+}
+
+/* Collapse the outer wrapper and inner bar together */
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq {
+    order: -1 !important;
+    flex: 0 0 auto !important;
+    width: 34px !important;
+    transition: width var(--transitionspeed) ease !important;
+
+}
+
+.search_i16Ad0:not(.open_i16Ad0) .searchBar_i16Ad0 {
+    width: 34px;
+    transition: width var(--transitionspeed) ease, background-color var(--transitionspeed) ease;
+    background-color: transparent;
+}
+
+/* Shrink the text editor completely when collapsed so it doesn't push the icon out */
+.search_i16Ad0:not(.open_i16Ad0):not(:hover):not(:focus-within) .editor_uNafB1 {
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Expand both wrappers when hovered, focused, or open */
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq:hover,
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq:focus-within,
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq:has(.open_i16Ad0) {
+    width: 244px !important;
+}
+
+.search_i16Ad0:not(.open_i16Ad0):hover .searchBar_i16Ad0,
+.search_i16Ad0:focus-within .searchBar_i16Ad0 {
+    width: 244px;
+    background-color: var(--background-tertiary);
+}
+
+/* Hide placeholder text when collapsed */
+[data-slate-placeholder="true"] {
+    transition: color var(--transitionspeed) ease, opacity var(--transitionspeed) ease;
+}
+
+.search_i16Ad0:not(.open_i16Ad0):not(:hover):not(:focus-within) [data-slate-placeholder="true"] {
+    color: #0000 !important;
+    opacity: 0 !important;
+}
+
+/* Search icon scaling and color transitions */
+.icon_i16Ad0 {
+    flex-shrink: 0 !important;
+}
+
+.search_i16Ad0:not(.open_i16Ad0) .iconContainer_v966Ys {
+    transform: scale(1.1);
+    transition: var(--transitionspeed);
+}
+
+.search_i16Ad0:not(.open_i16Ad0):hover .iconContainer_v966Ys,
+.search_i16Ad0:focus-within .iconContainer_v966Ys {
+    transform: scale(1);
+}
+
+.search_i16Ad0:not(.open_i16Ad0) .icon_v966Ys {
+    color: var(--text-normal);
+}
+
+.search_i16Ad0:not(.open_i16Ad0):hover .icon_v966Ys,
+.search_i16Ad0:focus-within .icon_v966Ys {
+    color: var(--text-muted);
+}
+
+/* Fix buttons on pins items */
+.buttonContainer_e8b59c {
+    background-color: #0000;
+}
+
+/* Inbox alignment fix */
+.container__95796 {
+    padding-left: 16px;
+}
+
+/* Inbox channel item background */
+.channelHeader__35a7e {
+    background-color: rgb(51, 49, 53) !important;
+    border-radius: 8px;
+}
