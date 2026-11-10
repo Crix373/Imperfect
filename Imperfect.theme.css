@@ -1,0 +1,209 @@
+/**
+ * @name Imperfect
+ * @author Crix
+ * @authorLink https://github.com/YOUR_GITHUB_USERNAME
+ * @version 1.0.0
+ * @invite SDb6CGmx4
+ * @description A clean, custom Discord theme.
+ * @source https://github.com/YOUR_GITHUB_USERNAME/Imperfect
+*/
+
+/*
+     ⸙  ────     ────     ───── ❝ 𝐢𝐦𝐩𝐞𝐫𝐟𝐞𝐜𝐭 ❞ ─────    ────     ────  ⸙
+  ╭─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻🂡༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╮
+
+   ██╗███╗   ███╗██████╗ ███████╗██████╗ ███████╗███████╗ ██████╗████████╗
+   ██║████╗ ████║██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝
+   ██║██╔████╔██║██████╔╝█████╗  ██████╔╝█████╗  █████╗  ██║        ██║
+   ██║██║╚██╔╝██║██╔═══╝ ██╔══╝  ██╔══██╗██╔══╝  ██╔══╝  ██║        ██║
+   ██║██║ ╚═╝ ██║██║     ███████╗██║  ██║██║     ███████╗╚██████╗   ██║
+   ╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝
+
+           ████████╗██╗  ██╗ ██████╗ ██╗   ██╗ ██████╗ ██╗  ██╗████████╗
+           ╚══██╔══╝██║  ██║██╔═══██╗██║   ██║██╔════╝ ██║  ██║╚══██╔══╝
+              ██║   ███████║██║   ██║██║   ██║██║  ███╗███████║   ██║
+              ██║   ██╔══██║██║   ██║██║   ██║██║   ██║██╔══██║   ██║
+              ██║   ██║  ██║╚██████╔╝╚██████╔╝╚██████╔╝██║  ██║   ██║
+              ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝   ╚═╝
+
+  ╰─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻-༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╯
+*/
+
+/* IMPERFECT theme entry point */
+@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/imperfect.css");
+
+/* removable addons */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://chillax-org.github.io/Discolored/main.css");
+@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/IconPackEdited.css");
+@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/AvatarOnlyMemberList.css");
+@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/FolderRedesign.css");
+@import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css");
+@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/FriendGrid.css");
+@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/ColoredLinks.css");
+
+/*additional addons*/ /*(remove the both * to use)*/
+
+/* To hide annoying elements such as nitro, shop, sticker picker etc tab (remove the both * to use)*/
+/*@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/HideAnnoyingElements.css");*/
+
+
+/*Imperfect Roots*/
+:root {
+    /*background image*/ /*(replace the link to use)*/
+    --background-image: var(--wallpaper);
+    --bg-opacity: 100%;
+    /*bg dev suggestions*/
+    --wallpaper: url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Wallpapers/chillax-default.png");
+    /*modern background selection*/
+    --modern-dark-bg: url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Wallpapers/modern-dark-bg.png");
+    --modern-light-bg: url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Wallpapers/modern-light-bg.png");
+}
+
+
+/*window*/ /*dark mode*/
+:root.theme-dark {
+    --window-margin: 20px; /*must be above 20px*/
+    --window-colour: #0009;
+    --window-blur: 5px;
+    --window-border-radius: 10px;
+    --sidebar-colour: rgb(36, 36, 36);
+}
+
+/*window*/ /*light mode*/
+:root.theme-light {
+    --window-margin: 20px; /*must be above 20px*/
+    --window-colour: rgba(255, 255, 255, 0.6);
+    --window-blur: 5px;
+    --window-border-radius: 10px;
+    --sidebar-colour: rgb(209, 209, 209);
+}
+
+
+/*roots*/ /*both dark and light*/
+:root {
+    --user-name: "King";
+    --edited-message: " EDITED ✎ ";
+    --font-name: Poppins;
+    --font-size: 13px;
+    --group-chat-font: "Monoton"; /* change this to change the group chat's default font */
+
+
+    /*glow radial status*/ /*must end in px*/
+    --rs-small-spacing: 0px;
+    --rs-large-spacing: 0px;
+    --rs-medium-spacing: 0px;
+    --rs-small-width: 2.5px;
+    --rs-medium-width: 3.5px;
+    --rs-large-width: 4.5px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #1df594;
+    --rs-idle-color: #faa61a;
+    --rs-dnd-color: #f04747;
+    --rs-offline-color: #636b75;
+    --rs-streaming-color: #643da7;
+    --rs-invisible-color: #636b75;
+    --rs-phone-visible: block; /* change it to `none` to disable mobile icon */
+    --rs-phone-color: var(--rs-online-color);
+
+    /* For accent color to take full effect must need to change both */
+    /* theme colours rgb */
+    --accentcolor: 251, 84, 84;
+    /* theme colours hex */
+    --accentcolorV2: #fb5454;
+
+
+    /* settings modal root */
+    --themelightsettingsmodalbackground: rgb(223, 223, 223);
+    --themedarksettingsmodalbackground: rgb(51, 49, 53);
+    --settingsmodalwidth: 960px;
+    --settingsmodalheight: 80vh;
+
+    /* avatar only member list */
+    --memberlist-border-radius: 10px; /* can be in `px`, `rem`, `em` */
+
+    /* placeholder texts/values */
+    /* input fields */
+    --imperfect-input-field: "Life is so much easier when you just take a moment to chill";
+    /* input fields  when the channel is locked*/
+    --imperfect-input-field-locked: "Unfortunately, you can't chill in this channel";
+    /* typing indicator: when a single person is typing */
+    --imperfect-input-typing-indicator-one-person: "is smashing some buttons";
+    /* typing indicator: when more than one person is typing */
+    --imperfect-input-typing-indicator-many-person: "are smashing some buttons";
+
+    /* scroller (by default transparent) */
+    --imperfect-scroller-color: transparent; /* change `transparent` to some other hex color to make it visible */
+
+    /* Spotify Player Control Squid GIF Adjustments */
+
+    /* Change the ulr in the `--imperfect-spotify-control-squid-gif-url` css var to your liking */
+    --imperfect-spotify-control-squid-gif-url: none; /* add your own gif url here */
+    /* adjust the height and width accordingly */
+    --imperfect-spotify-control-squid-width: 25px;
+    --imperfect-spotify-control-squid-height: 25px;
+
+    /* adjust glow color accordingly */
+    --imperfect-spotify-control-squid-glow: rgba(0, 255, 255, 0.4); /* set to `none` to disable it */
+}
+
+/*discord transparency*//*roots*/ /*theme dark*/
+.theme-dark {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #9d9d9d;
+    --channels-default: #8e9297;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(36, 36, 36);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+/*discord transparency*//*roots*/ /*theme light*/
+.theme-light {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: rgb(0, 0, 0);
+    --header-secondary: #3f3f3f;
+    --text-normal: #303030;
+    --text-muted: #333333;
+    --channels-default: #585b5e;
+    --interactive-normal: #3a3a3a;
+    --interactive-hover: #333333;
+    --interactive-active: rgb(0, 0, 0);
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(27, 27, 27);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+/*!*friends grid banner colour*!*/
+/*.theme-dark {*/
+/*    --FG-cards-banner-background: transparent !important;*/
+/*}*/
+
+/*.theme-light {*/
+/*    --FG-cards-banner-background: transparent !important;*/
+/*}*/
+
+
+/*About*/
+/*
+- Imperfect — a custom Discord theme by Crix.
+*/
+
+/*credits*/
+/*
+ Imperfect — by Crix
+*/
