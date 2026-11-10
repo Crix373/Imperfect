@@ -1,11 +1,9 @@
 /**
  * @name Imperfect
  * @author Crix
- * @authorLink https://github.com/YOUR_GITHUB_USERNAME
- * @version 1.0.0
- * @invite SDb6CGmx4
- * @description A clean, custom Discord theme.
- * @source https://github.com/YOUR_GITHUB_USERNAME/Imperfect
+ * @authorLink https://github.com/Crix373
+ * @version 2.1.5
+ * @description A clean, custom Discord theme
 */
 
 /*
@@ -30,23 +28,23 @@
 */
 
 /* IMPERFECT theme entry point */
-@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/imperfect.css");
+@import url("https://Crix373.github.io/Imperfect/imperfect.css");
 
 /* removable addons */
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
 @import url("https://chillax-org.github.io/Discolored/main.css");
-@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/IconPackEdited.css");
-@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/AvatarOnlyMemberList.css");
-@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/FolderRedesign.css");
+@import url("https://Crix373.github.io/Imperfect/Addons/IconPackEdited.css");
+@import url("https://Crix373.github.io/Imperfect/Addons/AvatarOnlyMemberList.css");
+@import url("https://Crix373.github.io/Imperfect/Addons/FolderRedesign.css");
 @import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css");
-@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/FriendGrid.css");
-@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/ColoredLinks.css");
+@import url("https://Crix373.github.io/Imperfect/Addons/FriendGrid.css");
+@import url("https://Crix373.github.io/Imperfect/Addons/ColoredLinks.css");
 
 /*additional addons*/ /*(remove the both * to use)*/
 
 /* To hide annoying elements such as nitro, shop, sticker picker etc tab (remove the both * to use)*/
-/*@import url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Addons/HideAnnoyingElements.css");*/
+/*@import url("https://Crix373.github.io/Imperfect/Addons/HideAnnoyingElements.css");*/
 
 
 /*Imperfect Roots*/
@@ -55,10 +53,10 @@
     --background-image: var(--wallpaper);
     --bg-opacity: 100%;
     /*bg dev suggestions*/
-    --wallpaper: url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Wallpapers/chillax-default.png");
+    --wallpaper: url("https://Crix373.github.io/Imperfect/Wallpapers/chillax-default.png");
     /*modern background selection*/
-    --modern-dark-bg: url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Wallpapers/modern-dark-bg.png");
-    --modern-light-bg: url("https://YOUR_GITHUB_USERNAME.github.io/Imperfect/Wallpapers/modern-light-bg.png");
+    --modern-dark-bg: url("https://Crix373.github.io/Imperfect/Wallpapers/modern-dark-bg.png");
+    --modern-light-bg: url("https://Crix373.github.io/Imperfect/Wallpapers/modern-light-bg.png");
 }
 
 
