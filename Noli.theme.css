@@ -1,9 +1,7 @@
 /**
  * @name Imperfect
  * @author Crix
- * @authorLink https://discord.com/users/
  * @version 1.0.0
- * @invite SDb6CGmx4
  * @description A clean, custom Discord theme.
  * @source local
 */
@@ -6314,7 +6312,7 @@ html.theme-light [href*="steamcommunity.com/"] {
     --background-image: var(--wallpaper);
     --bg-opacity: 100%;
     /*bg dev suggestions*/
-    --wallpaper: url("https://crix373.github.io/Imperfect/Noli.png");
+    --wallpaper: url("https://crix373.github.io/Imperfect/Noli1.png");
     /*modern background selection*/
     --modern-dark-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-dark-bg.png");
     --modern-light-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-light-bg.png");
